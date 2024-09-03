@@ -1,0 +1,91 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: Arial, Verdana, sans-serif;
+}
+
+.container {
+    padding: 40px 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+    padding: 30px;
+    background-color: rgb(247, 83, 7);
+    font-size: 0;
+    color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+.card:hover {
+    background-color: rgb(247, 156, 114);
+}
+
+.card:active {
+    background-color: rgb(167, 73, 29);
+}
+
+.open {
+    font-size: 45px;
+    color: white;
+    background-color: rgb(37, 60, 188);
+    cursor: default;
+}
+
+.open:hover{
+    background-color: rgb(37, 60, 188);
+}
+
+.open:active{
+    background-color: rgb(37, 60, 188);
+}
+
+.success {
+    font-size: 45px;
+    color: white;
+    background-color: #009705;
+    cursor: default;
+}
+
+.success:hover{
+    background-color: #009705;
+}
+
+.success:active{
+    background-color: #009705;
+}
